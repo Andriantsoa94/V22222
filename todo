@@ -1,30 +1,65 @@
 -bdd.sql [ok]
-  .creation database emprunt(Harena)
-  .table livre(Harena)
-  .creation table categorie_objet(Harena)
+  .creation database emprunt (Harena)
+  .table livre (Harena)
+  .creation table categorie_objet (Harena)
   .creation table image_objet (Harena)
-  .insertion donnee emprunt(Harena)
--index.php[ok]
-  .include bootstrap(Harena)
-  .input(Harena)
+  .insertion donnee emprunt (Harena)
+  .insertion donnee membre/categorie/objet/image/emprunt (Harena)
+  .creation vue vue_objets_emprunts (Harena)
+  .structure SQL et relations (Harena)
+  .contraintes et clés étrangères (Harena)
+  .tests d'intégrité BDD (Harena)
+
+-index.php [ok]
+  .include bootstrap (Harena)
+  .structure HTML/CSS (Harena)
+  .formulaire inscription (Tso)
      password
      nom 
      mail
      date de naissance 
      genre
   .inserer donnees sur BDD membre (Tso)
-  .boutton have an account (Tso)
+  .bouton have an account (Tso)
 
--traitlog.php[ok]
-   .login si compte existant(Tso)
+-traitlog.php [ok]
+   .login si compte existant (Tso)
    .inscription si contraire (Tso)
 
--fonction.php[ok]
-   .ajouter_membre(Tso)
+-fonction.php [ok]
+   .connexion BDD (Harena)
+   .ajouter_membre (Tso)
+   .get_categories (Tso)
+   .get_objets_vue (Tso)
+   .get_objet_by_id (Tso)
+   .get_images_objet (Tso)
+   .get_historique_emprunts (Tso)
+   .upload_img (Tso)
+   .get_membre_by_id (Tso)
+   .get_objets_membre_par_categorie (Tso)
+   .get_main_image (Tso)
+   .delete_image (Tso)
 
--accueil.php[ok]
-   .trier par categorie(Tso)
-   .lites objets(Tso)
-   .date retour(Tso)
+-accueil.php [ok]
+   .trier par categorie (Tso)
+   .liste objets (Tso)
+   .date retour (Tso)
+   .recherche nom/categorie/disponible (Tso)
+   .affichage image principale (Tso)
+   .lien fiche objet (Tso)
+   .lien fiche membre (Tso)
+   .ajout image (Tso)
+   .structure HTML/CSS (Harena)
 
--bootstrap[ok] (Hareana & Tsoa)
+-fiche_objet.php [ok]
+   .affichage image principale + autres images (Tso)
+   .historique emprunts (Tso)
+   .suppression image (Tso)
+   .structure HTML/CSS (Harena)
+
+-fiche_membre.php [ok]
+   .infos membre (Tso)
+   .objets du membre par catégorie (Tso)
+   .structure HTML/CSS (Harena)
+
+-bootstrap [ok] (Harena & Tsoa)
